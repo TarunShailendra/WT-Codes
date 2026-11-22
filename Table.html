@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Table</title>
+    <style>
+        table { width: 100%; text-align: center; }
+        thead { background-color: navy; color: white; }
+        tfoot { background-color: black; color: white; }
+        .gray { background-color: lightgray; }
+        .lab { background-color: lightgreen; }
+        .elective { background-color: orange; }
+        .lunch { background-color: yellow; }
+    </style>
+</head>
+<body>
+
+    <h2 align="center">Time Table</h2>
+
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>9:00 - 10:00</th>
+                <th>10:00 - 11:00</th>
+                <th>11:00 - 11:30</th>
+                <th>11:30 - 12:30</th>
+                <th>12:30 - 1:30</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Mon</td>
+                <td>Maths</td>
+                <td>Physics</td>
+                <td class="lunch" rowspan="5">B<br>R<br>E<br>A<br>K</td>
+                <td class="lab" colspan="2">Web Tech Lab</td>
+            </tr>
+            <tr class="gray">
+                <td>Tue</td>
+                <td>Web Tech</td>
+                <td>Maths</td>
+                <td class="elective">Elective</td>
+                <td>Physics</td>
+            </tr>
+            <tr>
+                <td>Wed</td>
+                <td class="lab" colspan="2">Python Lab</td>
+                <td>Web Tech</td>
+                <td class="elective">Elective</td>
+            </tr>
+            <tr class="gray">
+                <td>Thu</td>
+                <td>Maths</td>
+                <td>Physics</td>
+                <td>Web Tech</td>
+                <td>Maths</td>
+            </tr>
+            <tr>
+                <td>Fri</td>
+                <td>Web Tech</td>
+                <td>Maths</td>
+                <td class="lab" colspan="2">Physics Lab</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="6">Green = Lab, Orange = Elective, Yellow = Break</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
